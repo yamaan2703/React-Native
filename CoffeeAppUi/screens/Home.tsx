@@ -105,7 +105,7 @@ export default function Home() {
 
   return (
     <>
-      <SafeAreaView style={[tw`flex-1 bg-white`]}>
+      <SafeAreaView style={[tw`flex-1 bg-black`]}>
         <StatusBar />
         <View style={[tw`w-full h-[220px] relative`]}>
           <Image
@@ -162,7 +162,7 @@ export default function Home() {
         </View>
 
         {/* categories */}
-        <View style={[tw`px-5 mt-6`]}>
+        <View style={[tw`px-5 mt-3`]}>
           <FlatList
             horizontal
             showsHorizontalScrollIndicator={false}
@@ -188,7 +188,7 @@ export default function Home() {
         </View>
 
         {/* Coffee card */}
-        <View style={[tw`mt-16 py-2`]}>
+        <View style={[tw`mt-5 py-2`]}>
             <Carousel
                 containerCustomStyle={{ overflow: 'visible' }}
                 data={coffeeItems}
@@ -205,14 +205,3 @@ export default function Home() {
     </>
   );
 }
-{/* <Carousel
-                containerCustomStyle={{ overflow: 'visible' }}
-                data={coffeeItems}
-                renderItem={({ item }: { item: any }) => <CoffeeCard item={item} />}
-                firstItem={1}
-                inactiveSlideOpacity={0.75}
-                inactiveSlideScale={0.77}
-                sliderWidth={400}
-                itemWidth={250}
-                style={tw`flex items-center`}
-            /> */}
