@@ -12,6 +12,8 @@ import {
 import tw from 'twrnc';
 import Icon from 'react-native-vector-icons/MaterialIcons';
 import CoffeeCard from '../components/coffeeCard';
+import Carousel from 'react-native-snap-carousel';
+import { coffeeItems } from '../data/coffeeData';
 // import Carousel from 'react-native-snap-carousel';
 
 
@@ -186,8 +188,18 @@ export default function Home() {
         </View>
 
         {/* Coffee card */}
-        <View>
-            <CoffeeCard />
+        <View style={[tw`mt-16 py-2`]}>
+            <Carousel
+                containerCustomStyle={{ overflow: 'visible' }}
+                data={coffeeItems}
+                renderItem={({ item }: { item: any }) => <CoffeeCard item={item} />}
+                firstItem={1}
+                inactiveSlideOpacity={0.75}
+                inactiveSlideScale={0.77}
+                sliderWidth={400}
+                itemWidth={250}
+                style={tw`flex items-center`}
+            />
         </View>
       </SafeAreaView>
     </>
