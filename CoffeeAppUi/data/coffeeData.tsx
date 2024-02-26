@@ -50,7 +50,7 @@ export const coffeeItems = [
         price: "15.50",
         volume: "100 ml",
         stars: "4.2",
-        image: { uri: "https://images.unsplash.com/photo-1571658734974-e513dfb8b86b?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fExhdHRlJTIwY29mZmVlfGVufDB8fDB8fHww"} ,
+        image: { uri: "https://images.unsplash.com/photo-1587080413959-06b859fb107d?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjB8fGxhdHRlJTIwY29mZmVlfGVufDB8fDB8fHww"} ,
         desc: "Coffee's flavor hinges on factors like bean type, origin, roast, grind size, brewing method, water quality, and altitude. Each element adds a distinct note to the brew, creating a rich tapestry of tastes and aromas for aficionados to savor."
     },
     {
@@ -59,7 +59,7 @@ export const coffeeItems = [
         price: "35.50",
         volume: "125 ml",
         stars: "4.7",
-        image: {uri : "https://images.unsplash.com/photo-1591377176334-bdf958755f28?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzZ8fEVzcHJlc3NvJTIwY29mZmVlfGVufDB8fDB8fHww"} ,
+        image: {uri : "https://images.unsplash.com/photo-1606499436678-9ef7fc58d5a2?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NzV8fGVzcHJlc3NvJTIwY29mZmVlfGVufDB8fDB8fHww"} ,
         desc: "Coffee's flavor hinges on factors like bean type, origin, roast, grind size, brewing method, water quality, and altitude. Each element adds a distinct note to the brew, creating a rich tapestry of tastes and aromas for aficionados to savor."
     },
     {
@@ -77,7 +77,7 @@ export const coffeeItems = [
         price: "30.50",
         volume: "126 ml",
         stars: "4.7",
-        image: { uri : "https://images.unsplash.com/photo-1642647391072-6a2416f048e5?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mzh8fE1vY2hhJTIwY29mZmVlfGVufDB8fDB8fHww"} ,
+        image: { uri : "https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8QW1lcmljYW5vJTIwY29mZmVlfGVufDB8fDB8fHww"} ,
         desc: "Coffee's flavor hinges on factors like bean type, origin, roast, grind size, brewing method, water quality, and altitude. Each element adds a distinct note to the brew, creating a rich tapestry of tastes and aromas for aficionados to savor."
     },
 ];

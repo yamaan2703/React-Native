@@ -8,6 +8,7 @@ import tw from 'twrnc';
 import Favourite from '../screens/favourite';
 import Cart from '../screens/cart';
 import ProductScreen from '../screens/ProductScreen';
+import MainScreen from '../screens/main';
 
 const Stack = createNativeStackNavigator();
 const Tab = createMaterialBottomTabNavigator();
@@ -16,7 +17,11 @@ export default function Navigation() {
   return (
     <NavigationContainer>
       <Stack.Navigator>
-      
+      <Stack.Screen
+          options={{headerShown: false}}
+          name="MainScren"
+          component={MainScreen}
+        />
         <Stack.Screen
           options={{headerShown: false}}
           name="Home"

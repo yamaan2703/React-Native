@@ -13,13 +13,11 @@ import tw from 'twrnc';
 import Icon from 'react-native-vector-icons/MaterialIcons';
 import CoffeeCard from '../components/coffeeCard';
 import Carousel from 'react-native-snap-carousel';
-import { coffeeItems } from '../data/coffeeData';
-// import Carousel from 'react-native-snap-carousel';
-
+import {coffeeItems} from '../data/coffeeData';
 
 export default function Home() {
   const [activeCat, setActiveCat] = useState(1);
-  const [category, setCategory] = useState('');
+  // const [category, setCategory] = useState('');
 
   const categories = [
     {
@@ -45,8 +43,6 @@ export default function Home() {
     },
   ];
 
-
-
   return (
     <>
       <SafeAreaView style={[tw`flex-1 bg-black`]}>
@@ -66,7 +62,9 @@ export default function Home() {
             <Icon
               name="person"
               size={35}
-              style={[tw`text-yellow-700 bg-yellow-50 rounded-full`]}
+              style={[
+                tw`text-white border border-white rounded-full p-1`,
+              ]}
             />
             <View style={[tw`flex-row items-center space-x-2`]}>
               <Icon
@@ -81,7 +79,9 @@ export default function Home() {
             <Icon
               name="notifications"
               size={35}
-              style={[tw`text-yellow-700`]}
+              style={[
+                tw`text-white border border-white rounded-full p-1`,
+              ]}
             />
           </View>
 
@@ -90,7 +90,7 @@ export default function Home() {
             <View
               style={[
                 tw`flex-row justify-between items-center rounded-full pl-4 pr-2`,
-                {backgroundColor: '#e6e6e6'},
+                {backgroundColor: 'rgb(203 213 225)'},
               ]}>
               <TextInput
                 placeholder="Search"
@@ -120,7 +120,7 @@ export default function Home() {
                   onPress={() => setActiveCat(item.id)}
                   style={[
                     tw`p-4 px-5 rounded-full mr-2 shadow`,
-                    isactive ? tw`bg-yellow-700` : tw`bg-yellow-600`,
+                    isactive ? tw`bg-yellow-900` : tw`bg-yellow-700`,
                   ]}>
                   <Text style={[tw`font-semibold text-white`]}>
                     {item.title}
@@ -133,17 +133,17 @@ export default function Home() {
 
         {/* Coffee card */}
         <View style={[tw`mt-5 py-2`]}>
-            <Carousel
-                containerCustomStyle={{ overflow: 'visible' }}
-                data={coffeeItems}
-                renderItem={({ item }: { item: any }) => <CoffeeCard item={item} />}
-                firstItem={1}
-                inactiveSlideOpacity={0.75}
-                inactiveSlideScale={0.77}
-                sliderWidth={400}
-                itemWidth={250}
-                style={tw`flex items-center`}
-            />
+          <Carousel
+            containerCustomStyle={{overflow: 'visible'}}
+            data={coffeeItems}
+            renderItem={({item}: {item: any}) => <CoffeeCard item={item} />}
+            firstItem={1}
+            inactiveSlideOpacity={0.75}
+            inactiveSlideScale={0.77}
+            sliderWidth={400}
+            itemWidth={250}
+            style={tw`flex items-center`}
+          />
         </View>
       </SafeAreaView>
     </>
