@@ -15,6 +15,7 @@ import CoffeeCard from '../components/coffeeCard';
 import Carousel from 'react-native-snap-carousel';
 import {coffeeItems} from '../data/coffeeData';
 
+
 export default function Home() {
   const [activeCat, setActiveCat] = useState(1);
   // const [category, setCategory] = useState('');
@@ -66,13 +67,13 @@ export default function Home() {
                 tw`text-white border border-white rounded-full p-1`,
               ]}
             />
-            <View style={[tw`flex-row items-center space-x-2`]}>
+            <View style={[tw`flex-row items-center`]}>
               <Icon
                 name="location-on"
                 size={25}
                 style={[tw`text-yellow-700`]}
               />
-              <Text style={[tw`text-md text-white text-base font-semibold`]}>
+              <Text style={[tw`text-lg text-white text-base font-semibold px-1`]}>
                 Karachi, Pakistan
               </Text>
             </View>

@@ -69,7 +69,7 @@ export default function ProductScreen(props: any) {
         </SafeAreaView>
         <View style={[tw`my-2 p-3`]}>
           <Text style={[tw`text-white text-xl font-bold`]}>Description.</Text>
-          <Text style={[tw`text-gray-300 font-md`]}>{item.desc}</Text>
+          <Text style={[tw`text-gray-300 text-sm`]}>{item.desc}</Text>
         </View>
 
         <View style={[tw`p-3`]}>
